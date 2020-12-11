@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+
 
 class CategoryController extends Controller
 {
@@ -13,7 +16,10 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $all_cat = Category::latest() ->get();
+        return view('category.index',[
+           'all_cat'    =>$all_cat,
+        ]);
     }
 
     /**
@@ -23,7 +29,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('category.create');
     }
 
     /**
@@ -34,7 +40,14 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        Category::create([
+            'name'  => $request ->name,
+            'slug'  => Str::slug($request ->name),
+        ]);
+
+        return redirect() ->route('category.index');
+
     }
 
     /**
