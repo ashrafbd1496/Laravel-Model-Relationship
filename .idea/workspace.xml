@@ -4,7 +4,6 @@
     <list default="true" id="8cf2c3ed-2c8b-4bc0-be31-7fcceb9a7291" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_11_124803_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_11_124803_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_11_125939_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_11_125939_create_categories_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +142,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -159,7 +159,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607690917956</updated>
-      <workItem from="1607690921075" duration="1243000" />
+      <workItem from="1607690921075" duration="2259000" />
     </task>
     <servers />
   </component>
