@@ -4,6 +4,7 @@
 
     <div class="wrap-table ">
         <a class="btn-primary btn-sm btn" href="{{route('post.create')}}">Add New Post</a>
+        <a class="btn-warning btn-sm btn" href="{{route('category.index')}}">Category</a>
         <div class="card shadow">
             <div class="card-body">
                 <h2>Posts</h2>
@@ -13,7 +14,7 @@
                         <th>#</th>
                         <th>Title</th>
                         <th>slug</th>
-                        <th>Category Id</th>
+                        <th>Category</th>
                         <th>Content</th>
                         <th>Action</th>
                     </tr>
@@ -25,7 +26,7 @@
                         <td>{{$loop ->index +1}}</td>
                         <td>{{$post->title}}</td>
                         <td>{{$post->slug}}</td>
-                        <td>{{$post ->category_id}}</td>
+                        <td>{{$post ->category ->name}}</td>
                         <td>{{$post ->content}}</td>
 
 

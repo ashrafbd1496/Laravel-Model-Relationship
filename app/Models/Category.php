@@ -9,4 +9,11 @@ class Category extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+    public function post(){
+        return $this ->hasOne(Post::class, 'cat_id', 'id');
+    }
+
+
+
 }

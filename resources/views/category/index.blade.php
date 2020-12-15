@@ -4,6 +4,7 @@
 
     <div class="wrap-table ">
         <a class="btn-primary btn-sm btn" href="{{route('category.create')}}">Add New Category</a>
+        <a class="btn-warning btn-sm btn" href="{{route('post.index')}}">Posts</a>
         <div class="card shadow">
             <div class="card-body">
                 <h2>Categories</h2>
@@ -11,8 +12,9 @@
                     <thead>
                     <tr>
                         <th>#</th>
-                        <th>Name</th>
-                        <th>slug</th>
+                        <th>Category Name</th>
+                        <th>Slug</th>
+                        <th>Post Title</th>
                         <th>Action</th>
                     </tr>
                     </thead>
@@ -22,7 +24,15 @@
                     <tr>
                         <td>{{$loop ->index +1}}</td>
                         <td>{{$cat->name}}</td>
-                        <td>{{$cat ->slug}}</td>
+                        <td>{{$cat->slug}}</td>
+
+                        <td>
+                           @if(isset($cat ->post->id))
+
+                            {{$cat ->post->title}}
+                            @endif
+
+                        </td>
 
                         <td>
                             <a class="btn btn-sm btn-info" href="#">View</a>
