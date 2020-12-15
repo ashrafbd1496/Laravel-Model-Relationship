@@ -27,10 +27,11 @@
                         <td>{{$cat->slug}}</td>
 
                         <td>
-                           @if(isset($cat ->post->id))
+                            @foreach($cat ->post as $p)
 
-                            {{$cat ->post->title}}
-                            @endif
+                            {{$p ->title}} , <br>
+
+                            @endforeach
 
                         </td>
 
