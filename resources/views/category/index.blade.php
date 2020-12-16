@@ -25,14 +25,10 @@
                         <td>{{$loop ->index +1}}</td>
                         <td>{{$cat->name}}</td>
                         <td>{{$cat->slug}}</td>
-
                         <td>
-                            @foreach($cat ->post as $p)
-
-                            {{$p ->title}} , <br>
-
+                            @foreach($cat ->posts as $p)
+                            {{$p ->title}},
                             @endforeach
-
                         </td>
 
                         <td>

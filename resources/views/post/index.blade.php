@@ -26,8 +26,12 @@
                         <td>{{$loop ->index +1}}</td>
                         <td>{{$post->title}}</td>
                         <td>{{$post->slug}}</td>
-                        <td>{{$post ->category ->name}}</td>
-                        <td>{{$post ->content}}</td>
+                      
+                      <td>
+                          @foreach($post ->categories as $c)
+                        {{$c ->name}} |
+                        @endforeach
+                    </td>
 
 
                         <td>
